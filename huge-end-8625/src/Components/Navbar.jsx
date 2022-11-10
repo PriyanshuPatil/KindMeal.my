@@ -58,8 +58,9 @@ Sign Up
     </TabPanel>
   </TabPanels>
 </Tabs>
+
         </Box>
-        
+
         </>
     )
 
