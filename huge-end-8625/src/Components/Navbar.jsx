@@ -53,6 +53,9 @@ Sign Up
     <TabPanel>
       <p>two!</p>
     </TabPanel>
+    <TabPanel>
+      <p>two!</p>
+    </TabPanel>
   </TabPanels>
 </Tabs>
         </Box>
