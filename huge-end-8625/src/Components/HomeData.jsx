@@ -4,7 +4,7 @@ function Carddata({props,bg}){
 
 return (
     <Box bg={bg} pt='30px' pb='30px'>
-    <Box w='75%' m='auto' p='20px'   bg='#f2fffe' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;' >
+    <Box  p='20px'   bg='#f2fffe' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;' >
     <Flex >
         <Text fontSize='21px' color='gray.500'>{props.Heading}</Text>
         <Spacer/>
@@ -141,7 +141,7 @@ export function HomeData(){
         <Carddata props={carddata1} />
         <Carddata props={carddata2} />
         <Carddata props={carddata3} />
-        <Carddata props={carddata4} bg='#cfe3df'/>
+        <Carddata props={carddata4} />
         </Box>
       )
 

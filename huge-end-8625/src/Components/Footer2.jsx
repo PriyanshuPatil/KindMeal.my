@@ -1,27 +1,6 @@
-import {
-    Box,
-    Container,
-    Link,
-    SimpleGrid,
-    Stack,
-    Text,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-//   import Styles from "./Footer.module.css"
-  import { extendTheme } from '@chakra-ui/react'
-  
+import { Box, Container, Link, SimpleGrid, Stack,  Text, useColorModeValue, } from '@chakra-ui/react';
 
-// 2. Define the new text styles
-export const theme = extendTheme({
-    Link: {
-      // you can also use responsive styles
-      fontSize: "14px",
-      lineHeight: '12px',
-    },
-  
-})
-  
-  const ListHeader = ({ children }) => {
+const ListHeader = ({ children }) => {
     return (
       <Text fontWeight={'500'} fontSize={'sm'} mb={2}>
         {children}
@@ -37,12 +16,12 @@ export const theme = extendTheme({
     );
   };
 
-  export default function Footer() {
+  export default function Footer2() {
     return (
       <Box
-        bg={useColorModeValue('green.400', 'green.900')}
-        color={useColorModeValue('white')}>
-        <Container as={Stack} maxW={'maxContent'} px={40} py={10}>
+        bg='green.400'
+        color='white'>
+        <Container as={Stack} maxW={'maxContent'} px={40} py={10} textAlign='left'>
           <SimpleGrid columns={{ base: 1, sm: 3, md: 5 }} spacing={8}>
             <Stack align={'flex-start'} >
               <ListHeader>General</ListHeader>
