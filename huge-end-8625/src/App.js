@@ -6,13 +6,13 @@ import { Slider } from './Components/Slider';
 import { HomeData } from './Components/HomeData';
 import Home from './Pages/Home';
 import Footer2 from './Components/Footer2';
+import SignupModal from './Components/Signup';
+import LoginModal from './Components/Login';
 function App() {
   return (
     <div className="App">
-     <Navbar/>
-     {/* <Home/> */}
-     <Footer1/>
-     <Footer2/>
+    <LoginModal/>
+     <SignupModal/>
     </div>
   );
 }

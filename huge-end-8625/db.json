@@ -1,12 +1,168 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "login_data": [
-        { "id": 1, "user": "priyanshu", "password": "1234" , "admin": true }
-      ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "login_data": [
+    {
+      "id": 1,
+      "user": "priyanshu",
+      "password": "1234",
+      "admin": true,
+      "gender": "male"
+    },
+    {
+      "user": "priyanshu2710_",
+      "password": "12345",
+      "admin": false,
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 7
+    },
+    {
+      "user": "",
+      "password": "",
+      "admin": "",
+      "gender": "male",
+      "id": 8
+    },
+    {
+      "user": "",
+      "password": "1234",
+      "admin": "",
+      "gender": "male",
+      "id": 9
+    },
+    {
+      "user": "",
+      "password": "999",
+      "admin": "",
+      "gender": "male",
+      "id": 10
+    },
+    {
+      "user": "",
+      "password": "1234",
+      "admin": false,
+      "gender": "male",
+      "id": 11
+    },
+    {
+      "user": "",
+      "password": "1234",
+      "admin": true,
+      "gender": "male",
+      "id": 12
+    },
+    {
+      "user": "pantuugurjar01@gmail.com",
+      "password": "1234",
+      "admin": false,
+      "gender": "Male",
+      "id": 13
+    },
+    {
+      "user": "pantuugurjar01@gmail.com",
+      "password": "1234",
+      "admin": false,
+      "gender": "Male",
+      "id": 14
+    },
+    {
+      "user": "priyanshu2001_",
+      "password": "",
+      "admin": false,
+      "gender": "Male",
+      "id": 15
+    },
+    {
+      "user": "pantuugurjar01@gmail.com",
+      "password": "99",
+      "admin": false,
+      "gender": "Female",
+      "id": 16
+    },
+    {
+      "user": "priyanshu2710_",
+      "password": "99",
+      "admin": false,
+      "gender": "Male",
+      "id": 17
+    },
+    {
+      "user": "priyanshu2710_",
+      "password": "999",
+      "admin": false,
+      "gender": "Male",
+      "id": 18
+    },
+    {
+      "user": "priyanshu2710_",
+      "password": "99",
+      "admin": false,
+      "gender": "Male",
+      "id": 19
+    },
+    {
+      "user": "pantuugurjar01@gmail.com",
+      "password": "999",
+      "admin": false,
+      "gender": "Female",
+      "id": 20
+    },
+    {
+      "user": "pantuugurjar01@gmail.com",
+      "password": "999",
+      "admin": false,
+      "gender": "Female",
+      "id": 21
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}

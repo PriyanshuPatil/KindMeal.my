@@ -1,19 +1,27 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import { createContext } from "react";
+export const Appcontext=createContext();
+function AuthContextProvider({children}) {
+   const [isAuth,setAuth]=useState({auth:"false",token:null,category:false});
+  
 
-export const AppContext= createContext();
+   const changeState=(token,category)=>{
+    setAuth({...isAuth,"auth":isAuth,"token":token,'category':category});
+ 
+   }
 
-export default function AppContextProvider({children}){
-    const [user,setUser]= useState({
-        isAuth:false,
-        userName:""
-    })
-    const handleLogin=(value)=>{
-       setUser({...user,isAuth:true,userName:value})
-    }
-    const handleLogout=()=>{
-        setUser({...user,isAuth:false,userName:""})
-     }
-return <AppContext.Provider value={{user,handleLogin,handleLogout}}>
-    {children}
-</AppContext.Provider>
+   
+   const logout=()=>{
+    setAuth({...isAuth,"auth":!isAuth,"token":"null"});
+   
+   }
+
+   const  value={isAuth,changeState,logout}
+
+    return <Appcontext.Provider value={value}>
+        {children}
+    </Appcontext.Provider>
+
 }
+
+export default AuthContextProvider;
