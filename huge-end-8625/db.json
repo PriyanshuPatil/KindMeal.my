@@ -23,143 +23,69 @@
     },
     {
       "user": "priyanshu2710_",
-      "password": "12345",
-      "admin": false,
-      "gender": "Male",
+      "password": "1234",
+      "category": true,
       "id": 2
     },
     {
-      "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 3
     },
     {
-      "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 4
     },
     {
-      "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 5
     },
     {
-      "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 6
     },
     {
-      "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 7
     },
     {
       "user": "",
-      "password": "",
-      "admin": "",
-      "gender": "male",
+      "password": "1234",
+      "category": true,
       "id": 8
     },
     {
-      "user": "",
+      "user": "priyanshu2710_",
       "password": "1234",
-      "admin": "",
-      "gender": "male",
+      "category": true,
       "id": 9
     },
     {
-      "user": "",
-      "password": "999",
-      "admin": "",
-      "gender": "male",
+      "user": "priyanshu2710_",
+      "password": "1234",
+      "category": true,
       "id": 10
     },
     {
-      "user": "",
+      "user": "priyanshu2710_",
       "password": "1234",
-      "admin": false,
-      "gender": "male",
+      "category": true,
       "id": 11
     },
     {
-      "user": "",
+      "user": "priyanshu2710_",
       "password": "1234",
-      "admin": true,
-      "gender": "male",
+      "category": false,
       "id": 12
-    },
-    {
-      "user": "pantuugurjar01@gmail.com",
-      "password": "1234",
-      "admin": false,
-      "gender": "Male",
-      "id": 13
-    },
-    {
-      "user": "pantuugurjar01@gmail.com",
-      "password": "1234",
-      "admin": false,
-      "gender": "Male",
-      "id": 14
-    },
-    {
-      "user": "priyanshu2001_",
-      "password": "",
-      "admin": false,
-      "gender": "Male",
-      "id": 15
-    },
-    {
-      "user": "pantuugurjar01@gmail.com",
-      "password": "99",
-      "admin": false,
-      "gender": "Female",
-      "id": 16
-    },
-    {
-      "user": "priyanshu2710_",
-      "password": "99",
-      "admin": false,
-      "gender": "Male",
-      "id": 17
-    },
-    {
-      "user": "priyanshu2710_",
-      "password": "999",
-      "admin": false,
-      "gender": "Male",
-      "id": 18
-    },
-    {
-      "user": "priyanshu2710_",
-      "password": "99",
-      "admin": false,
-      "gender": "Male",
-      "id": 19
-    },
-    {
-      "user": "pantuugurjar01@gmail.com",
-      "password": "999",
-      "admin": false,
-      "gender": "Female",
-      "id": 20
-    },
-    {
-      "user": "pantuugurjar01@gmail.com",
-      "password": "999",
-      "admin": false,
-      "gender": "Female",
-      "id": 21
     }
   ],
   "profile": {

@@ -4,7 +4,6 @@ import LoginModal from "../Components/Signup";
 function Home(){
     return (
         <>
-        <LoginModal/>
         <Slider/>
         <HomeData/>
         </>

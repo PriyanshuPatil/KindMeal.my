@@ -11,8 +11,9 @@ import LoginModal from './Components/Login';
 function App() {
   return (
     <div className="App">
-    <LoginModal/>
-     <SignupModal/>
+    <Navbar/>
+    <Footer1/>
+    <Footer2/>
     </div>
   );
 }

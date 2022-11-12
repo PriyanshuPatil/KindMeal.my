@@ -44,14 +44,11 @@ function SignupModal(){
     
     return (
         <>
-          <Button
-            ml='4'
-            onClick={() => {
-              setOverlay(<OverlayTwo />)
-              onOpen()
-            }}
-          >
-            Use Overlay two
+          
+          <Button colorScheme='white' color={'black'} onClick={()=>{setOverlay(<OverlayTwo />)
+              onOpen()}} w='60px' fontSize={'12px'} > 
+          
+          Signup
           </Button>
           <Modal isCentered isOpen={isOpen} onClose={onClose} >
             {overlay}
