@@ -14,43 +14,38 @@ export function CreateAccount(data){
     return ans;
     }
 
-    export function LoginAccount(data){
-    // const [data,setdata]=useState([]);
-
-        let ans= axios(
+ export function LoginAccount(data){
+let ans= axios(
             {
                 method:"POST",
                 url:"http://localhost:3000/login_data",
                 data:data
-        }
+   }
        
 
 
-        )
-        // let ans1=ans.then(
-        //     res=>{
-        //        let product =  res.data;
-        //        setdata(product.data);
-        //        data.map((el)=>{
-        //         console.log(el);
-        //         if(el.username=data1.username){
-        //             if(el.admin=data1.category){
-        //                 if(el.password==data1.password){
-        //                     // setuser(true)
-        //                 }
-        //             }
-        //         }
-        //        })
-        //        console.log(data)
-               
-        //     }
-        // )
-        // .catch(
-        //     err => {console.log(err) ;
-        //     alert('Plz Enter Correct Email & Password')}
-        // )
-     
-
-        return ans;
-        }
+  )
+return ans;
+ }
    
+export  const DealsData =(page,limit)=>{
+  return axios(`http://localhost:3000/items`,{
+                params:{
+                    _page:page,
+                    _limit:limit
+                  
+                }
+            } )
+ }
+
+ export  const KindsData =(page,limit)=>{
+    return axios(`http://localhost:3000/Kinds`,{
+                  params:{
+                      _page:page,
+                      _limit:limit
+                    
+                  }
+              } )
+   }
+  
+  

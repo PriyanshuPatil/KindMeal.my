@@ -4,6 +4,8 @@ import { Appcontext } from "../Context/Appcontext";
 import Home from "../Pages/Home";
 import LoginModal from "./Login";
 import SignupModal from "./Signup";
+import Deals from "../Pages/Deals";
+import Kinds from "../Pages/Kind";
 function Navbar(){
 const {isAuth}=useContext(Appcontext)
     return (
@@ -43,10 +45,10 @@ const {isAuth}=useContext(Appcontext)
       <Home/>
     </TabPanel>
     <TabPanel>
-      <p>two!</p>
+   <Deals/>
     </TabPanel>
     <TabPanel>
-      <p>two!</p>
+      <Kinds/>
     </TabPanel>
   </TabPanels>
   </Box>
