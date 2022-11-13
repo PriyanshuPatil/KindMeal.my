@@ -1,10 +1,8 @@
 import { Box, Image, Badge } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
-
 export function DealsCard({property}) {
-
   return (
-    <Box bg='gray.200' w='90%' m='auto' fontSize={'19px'} mt='5%' borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
+    <Box bg='gray.200' w='90%' m='auto' fontSize={'19px'} mt='3%' borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
         <Box>
             <Image  src={property.imageUrl} alt={property.imageAlt} w='450px' h='320px' />
         </Box>

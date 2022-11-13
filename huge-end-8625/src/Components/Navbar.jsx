@@ -6,8 +6,10 @@ import LoginModal from "./Login";
 import SignupModal from "./Signup";
 import Deals from "../Pages/Deals";
 import Kinds from "../Pages/Kind";
+import { useNavigate } from "react-router-dom";
 function Navbar(){
-const {isAuth}=useContext(Appcontext)
+const {isAuth}=useContext(Appcontext);
+const navigate = useNavigate();
     return (
         <>
         <Box h={{base:"auto",lg:'5rem' ,sm:"auto", md:"3rem"}} w={{base:"100%",lg:"75%", sm:"100%", md:"90%"}} m={'auto'} >
@@ -29,28 +31,18 @@ const {isAuth}=useContext(Appcontext)
         <Tabs variant='unstyled'  >
           <Box  w={'100%'} m='auto' bg='green.400' >
   <TabList color='white' gap='15px' fontSize={'14px'} bg='green.400' w={'75%'} m='auto' ml='auto'>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Home</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Meal Deals</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Kind Moments</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Hot Picks</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Recipies</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Directory</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Articles</Tab>
-    <Tab _selected={{ color: 'white', bg: 'green.600' }}>Help</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/`)}}>Home</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/meals`)}}>Meal Deals</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/moments`)}}>Kind Moments</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/picks`)}}>Hot Picks</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/recipe`)}}>Recipies</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/directory`)}}>Directory</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/articles`)}}>Articles</Tab>
+    <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/help`)}}>Help</Tab>
   </TabList>
   </Box>
   <Box bg='white' w={'75%'} m='auto' >
-  <TabPanels >
-    <TabPanel>
-      <Home/>
-    </TabPanel>
-    <TabPanel>
-   <Deals/>
-    </TabPanel>
-    <TabPanel>
-      <Kinds/>
-    </TabPanel>
-  </TabPanels>
+  
   </Box>
 </Tabs>
         </Box>

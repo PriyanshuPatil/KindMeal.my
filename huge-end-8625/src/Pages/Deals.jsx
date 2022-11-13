@@ -3,8 +3,10 @@ import { useState } from "react";
 import { DealsData } from "../Api/Axios";
 import { DealsCard } from "../Components/DealsCard";
 import { Pagination } from "../Components/Pagination";
-import { Spinner } from '@chakra-ui/react'
+import { useNavigate } from "react-router-dom";
+import { Spinner ,Box} from '@chakra-ui/react'
 function Deals(){
+ const navigate = useNavigate();
 const [meals,setMeals]=useState([]);
 const [page,SetPages]=useState(3);
 const [limit,setlimit]=useState(10);
@@ -26,17 +28,19 @@ if(loading){
 }
 
     return (
-        <>
+        <Box m='auto' w='80%'>
         
       {meals.map((el)=>{
         return (
         <>
+        <Box  onClick={()=>{navigate(`/meals/${el.id}`)}} >
         <DealsCard property={el}/>
+        </Box>
         </>
         )
       })}
       <Pagination current={page} onChange={page2} onChange1={page1}/>
-        </>
+        </Box>
     )
 }
 

@@ -8,10 +8,12 @@ import Home from './Pages/Home';
 import Footer2 from './Components/Footer2';
 import SignupModal from './Components/Signup';
 import LoginModal from './Components/Login';
+import AllRoutes from './Routes/AllRoutes';
 function App() {
   return (
     <div className="App">
     <Navbar/>
+    <AllRoutes/>
     <Footer1/>
     <Footer2/>
     </div>

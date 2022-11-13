@@ -8,15 +8,15 @@ export function Pagination(props) {
       disabled={current==1}
       onClick={onChange}
       margin='10px'
-      bg='black'
+      bg='purple.800'
       color='white'
     >
       Prev
     </Button>
   );
   const currentPage = <Button  margin='10px'
-  bg='black'
-  color='white' disabled={false}>{current}</Button>;
+  bg='purple.800'
+  color='white' >{current}</Button>;
   const next = (
     <Button
     
@@ -24,17 +24,17 @@ export function Pagination(props) {
       
       onClick={onChange1}
       margin='10px'
-      bg='black'
+     bg='purple.800'
       color='white'
     >
       Next
     </Button>
   );
   return (
-  <Box bg='purple.400' w='90%' borderRadius={'10px'} m='auto' mt='10px'>
+  <Box bg='gray.200' w='90%' borderRadius={'10px'} m='auto' mt='10px'>
       <div>
       {prev}
-      <Button  margin='10px' bg='black'
+      <Button bg='purple.800'  margin='10px' 
       color='white' disabled={true}>{currentPage}</Button>
       {next}
       </div>

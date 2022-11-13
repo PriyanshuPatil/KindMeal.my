@@ -4,15 +4,13 @@ import { KindsData } from "../Api/Axios";
 import { KindCard } from "../Components/KindsCard";
 import { Pagination } from "../Components/Pagination";
 import { Box, Spinner,Grid,LinkBox } from '@chakra-ui/react'
-import { useNavigate } from "react-router-dom";
 import {Link, Navigate} from 'react-router-dom'
-
+import {useNavigate} from 'react-router-dom' ;
 function Kinds(){
-const navigate = useNavigate();
 const [meals,setMeals]=useState([]);
 const [page,SetPages]=useState(1);
 const [limit,setlimit]=useState(12);
-
+const navigate = useNavigate();
 const [loading,setloading]=useState(false);
 const page1=()=>{
 SetPages(page+1)
@@ -31,19 +29,19 @@ if(loading){
 }
 
     return (
-        <>
+        <Box m='auto' w='80%'>
          <Grid templateColumns='repeat(3, 1fr)' gap={10} mt='20px'>
       {meals.map((el)=>{
         return (
-    //    navigate(`/Kinds/${el.id}`)
-        <Box  onClick={()=>{console.log("hello hy")}}>
+    //    
+        <Box  onClick={()=>{navigate(`/moments/${el.id}`)}}>
         <KindCard property={el}/>
    </Box>
         )
       })} 
       </Grid>
       <Pagination current={page} onChange={page2} onChange1={page1}/>
-        </>
+        </Box>
     )
 }
 

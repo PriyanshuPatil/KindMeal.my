@@ -29,7 +29,7 @@ return ans;
  }
    
 export  const DealsData =(page,limit)=>{
-  return axios(`http://localhost:3000/items`,{
+  return axios(`http://localhost:3000/meals`,{
                 params:{
                     _page:page,
                     _limit:limit
@@ -37,9 +37,12 @@ export  const DealsData =(page,limit)=>{
                 }
             } )
  }
+ export  const DealsDataOne =(id)=>{
+    return axios(`http://localhost:3000/meals/${id}` )
+   }
 
  export  const KindsData =(page,limit)=>{
-    return axios(`http://localhost:3000/Kinds`,{
+    return axios(`http://localhost:3000/moments`,{
                   params:{
                       _page:page,
                       _limit:limit
@@ -48,4 +51,8 @@ export  const DealsData =(page,limit)=>{
               } )
    }
   
+  
+ export  const KindsDataOne =(id)=>{
+    return axios(`http://localhost:3000/moments/${id}` )
+   }
   
