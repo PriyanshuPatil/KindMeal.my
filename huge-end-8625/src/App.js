@@ -11,7 +11,7 @@ import LoginModal from './Components/Login';
 import AllRoutes from './Routes/AllRoutes';
 function App() {
   return (
-    <div className="App">
+    <div className="App" bg='green'>
     <Navbar/>
     <AllRoutes/>
     <Footer1/>

@@ -4,7 +4,7 @@ export function CreateAccount(data){
     let ans= axios(
         {
             method:"POST",
-            url:"http://localhost:3000/login_data",
+            url:"http://localhost:3001/login_data",
             data:data
     }
    
@@ -18,7 +18,7 @@ export function CreateAccount(data){
 let ans= axios(
             {
                 method:"POST",
-                url:"http://localhost:3000/login_data",
+                url:"http://localhost:3001/login_data",
                 data:data
    }
        
@@ -29,7 +29,7 @@ return ans;
  }
    
 export  const DealsData =(page,limit)=>{
-  return axios(`http://localhost:3000/meals`,{
+  return axios(`http://localhost:3001/meals`,{
                 params:{
                     _page:page,
                     _limit:limit
@@ -38,11 +38,11 @@ export  const DealsData =(page,limit)=>{
             } )
  }
  export  const DealsDataOne =(id)=>{
-    return axios(`http://localhost:3000/meals/${id}` )
+    return axios(`http://localhost:3001/meals/${id}` )
    }
 
  export  const KindsData =(page,limit)=>{
-    return axios(`http://localhost:3000/moments`,{
+    return axios(`http://localhost:3001/moments`,{
                   params:{
                       _page:page,
                       _limit:limit
@@ -53,6 +53,6 @@ export  const DealsData =(page,limit)=>{
   
   
  export  const KindsDataOne =(id)=>{
-    return axios(`http://localhost:3000/moments/${id}` )
+    return axios(`http://localhost:3001/moments/${id}` )
    }
   

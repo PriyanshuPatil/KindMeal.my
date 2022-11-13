@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 import AuthContextProvider from './Context/Appcontext';
 import { BrowserRouter } from 'react-router-dom';
+import { SwitchContextProvider } from './Context/Switchcontext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <BrowserRouter>
     <ChakraProvider>
+      <SwitchContextProvider>
       <AuthContextProvider>
      <App />   
      </AuthContextProvider>
+     </SwitchContextProvider>
     </ChakraProvider>
     </BrowserRouter>
 

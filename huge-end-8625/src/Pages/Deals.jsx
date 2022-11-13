@@ -8,7 +8,7 @@ import { Spinner ,Box} from '@chakra-ui/react'
 function Deals(){
  const navigate = useNavigate();
 const [meals,setMeals]=useState([]);
-const [page,SetPages]=useState(3);
+const [page,SetPages]=useState(1);
 const [limit,setlimit]=useState(10);
 const [loading,setloading]=useState(false);
 const page1=()=>{
