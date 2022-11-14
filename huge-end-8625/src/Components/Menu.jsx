@@ -2,7 +2,11 @@ import { Card } from "./Card"
 import { Box,Heading } from "@chakra-ui/react"
 import { useState } from "react"
 import { useEffect } from "react";
+import { BookingConfirm } from "./BookingConfirm";
+import { Appcontext } from "../Context/Appcontext";
+import { useContext } from "react";
 export function Menu(){
+  const {isAuth}=useContext(Appcontext) ;
     const [rice1,setrice1]=useState(0);
     const [rice2,setrice2]=useState(0);
     const [rice3,setrice3]=useState(0);
@@ -47,7 +51,7 @@ const inc2=()=>{
                     setrice6(rice6-1) ;
                        }
                        const dec6=()=>{
-                       setrice5(rice6+1) ;
+                       setrice6(rice6+1) ;
                        }  
 
     return (
@@ -60,13 +64,34 @@ const inc2=()=>{
         <Card Count={rice5} Price={90} Item={"Gulab Jamun"} handleone={inc5} handletwo={dec5} />
         <Card Count={rice6} Price={70} Item={"Shahi Pulao"} handleone={inc6} handletwo={dec6} />
         <Total total={total}/>
+        <BookingConfirm 
+        
+        data1={
+          {"item":"Tanduri Roti","quantity": rice1,"status":false,price:"10","username":isAuth.user  }
+        }
+        data2={
+          {"item":"Kaju Curry","quantity": rice2,"status":false,price:"189" ,"username":isAuth.user }
+        }
+        data3={
+          {"item":"Paneer Tikka","quantity": rice3,"status":false,price:"245"  ,"username":isAuth.user}
+        }
+        data4={
+          {"item":"Chana Masala","quantity": rice4,"status":false,price:"220" ,"username":isAuth.user }
+        }
+        data5={
+          {"item":"Gulab Jamun","quantity": rice5,"status":false,price:"90" ,"username":isAuth.user }
+        }
+        data6={
+          {"item":"Shahi Pulao","quantity": rice6,"status":false,price:"70" ,"username":isAuth.user }
+        } />
         </>
     )
 }
 
 
 function HotalMenuList(){
-    return (<Box  fontFamily={'Monospace'}  bg='gray.400' color='green' gap='0px' w='100%' m='auto' mt='5px' mb='5px' p="1% 3%"  fontSize={'15px'} borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
+    return (
+  <Box  fontFamily={'Monospace'}  bg='gray.400' color='green' gap='0px' w='100%' m='auto' mt='5px' mb='5px' p="1% 3%"  fontSize={'15px'} borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
    
     <Heading ml='45%' color={'black'} fontSize={'25px'} textAlign={'center'} fontFamily={'Monospace'}>Hotal Menu</Heading >
   </Box>)
@@ -79,3 +104,5 @@ function Total(props){
     <Heading ml='45%' color={'black'} fontSize={'25px'} textAlign={'center'} fontFamily={'Serif'}>Total:- ₹{total}</Heading >
   </Box>)
 }
+
+

@@ -9,8 +9,6 @@ export function CreateAccount(data){
     }
    
     )
-    console.log(ans);
-    console.log("hello")
     return ans;
     }
 
@@ -56,3 +54,54 @@ export  const DealsData =(page,limit)=>{
     return axios(`http://localhost:3001/moments/${id}` )
    }
   
+
+
+
+   export function Order(data){
+    let ans= axios(
+        {
+            method:"POST",
+            url:"http://localhost:3001/order",
+            data:data
+    }
+   
+    )
+
+    return ans;
+    }
+
+    export function GetOrder(){
+        let ans= axios(
+            {
+                method:"GET",
+                url:"http://localhost:3001/order",
+        }
+       
+        )
+        return ans;
+        }
+
+        export function DeliteOrder(id){
+            let ans= axios(
+                {
+                    method:"DELETE",
+                    url:`http://localhost:3001/order/${id}`,
+            }
+           
+            )
+        
+            return ans;
+            }
+
+            export function UpdateData(id,data){
+                let ans= axios(
+                    {
+                        method:"PATCH",
+                        url:`http://localhost:3001/order/${id}`,
+                        data:data
+                }
+               
+                )
+            
+                return ans;
+                }

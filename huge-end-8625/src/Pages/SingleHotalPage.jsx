@@ -6,7 +6,7 @@ import { HotalCard } from '../Components/HotalCard';
 import { useEffect } from "react";
 import { useState } from "react";
 import { Menu } from '../Components/Menu';
-import { BookingConfirm } from '../Components/BookingConfirm';
+
 function SingleHotalPage(){
     const { hotal } = useParams();
     const [meals,setMeals]=useState([]);
@@ -27,7 +27,7 @@ function SingleHotalPage(){
       <HotalCard property={meals}/>
      
       <Menu/> 
-      <BookingConfirm/>
+    
     </Box> 
         </Box>
        

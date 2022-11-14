@@ -11,6 +11,7 @@ import Articles from '../Pages/Articles'
 import SingleHotalPage from '../Pages/SingleHotalPage'
 import SingleDealsPage from '../Pages/SingleDealsPage'
 import { PrivateRoute } from '../PrivateRoutes/PrivateRoute'
+import { Admin } from '../Pages/Admin'
 function AllRoutes() {
   return (
     <>
@@ -25,6 +26,7 @@ function AllRoutes() {
         <Route path="/help" element={<Help />} />
         <Route path="/meals/:hotal" element={<PrivateRoute><SingleHotalPage/></PrivateRoute>} />
         <Route path="moments/:sweet" element={<PrivateRoute><SingleDealsPage/></PrivateRoute>} />
+        <Route path="admin" element={<PrivateRoute><Admin/></PrivateRoute>} />
       </Routes>
     </>
   )

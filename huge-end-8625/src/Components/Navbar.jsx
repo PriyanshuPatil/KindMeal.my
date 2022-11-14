@@ -40,11 +40,11 @@ const navigate = useNavigate();
     <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/directory`)}}>Directory</Tab>
     <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/articles`)}}>Articles</Tab>
     <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/help`)}}>Help</Tab>
-   
+   {isAuth.category && <Tab _selected={{ color: 'white', bg: 'green.600' }} onClick={()=>{navigate(`/admin`)}}>Orders</Tab>} 
   </TabList>
 
   </Box>
-   {isAuth.category &&  <Switching/> }
+   {/* {isAuth.category &&  <Switching/> } */}
   <Box bg='white' w={'75%'} m='auto' >
   
   </Box>
