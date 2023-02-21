@@ -1,5 +1,5 @@
 # KindMeal
-This project is a complete clone UI of the Zoomcar website. Zoomcar, is an Indian self-drive car rental company. which offers the services of booking a car in a city of your choice.
+KindMeal.my is Malaysia's leading meat-free lifestyle platform , indulging you with delicious discounted vegetarian meals to save animals, health, environment and money.
 
 <img src="https://i.postimg.cc/sXMw0y6g/Screenshot-1018.png" alt="img1">
 <img src="https://i.postimg.cc/mDLLWpxq/Screenshot-1012.png" alt="img3">
