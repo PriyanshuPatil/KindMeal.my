@@ -11,14 +11,16 @@ This project is a complete clone UI of the Zoomcar website. Zoomcar, is an India
 - Html
 - JavaScript
 - Css
+- react
+- chakra ui
 
 ## Features
 - Landing Page
-- SignUp functionality with multi step form
-- Car Selection Page
+- SignUp functionality 
+- Recipe Page
+- Hotal List Page
+- Admin Page
 - Checkout Page
-- Filter Functionality
-- Offers Page
 
 ## Deployed Link
-<a href="https://incomparable-marzipan-d38d20.netlify.app/home.html">zoomcar.netlify.app</a>
+<a href="https://khana-khajana-huge-end-8625.netlify.app/">KhanaKhajana.netlify.app</a>
