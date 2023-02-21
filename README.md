@@ -1,14 +1,10 @@
-# huge-end-8625
+# KindMeal
 This project is a complete clone UI of the Zoomcar website. Zoomcar, is an Indian self-drive car rental company. which offers the services of booking a car in a city of your choice.
 
-## Description
-Zoomcar is an indian self-drive car rental company, headquarter in Banglore, India. no more worries about mileage, fuel costs , insurance, and car breakdowns because the self-drive cars from Zoomcar offer the customers more control , privacy,and freedom Book a self-drive car in any city you visit with the app on your phone and feel at home whereever you go.
-
-
-<img src="https://i.postimg.cc/c1bqsP1G/Screenshot-1006.png" alt="img1">
-<img src="https://i.postimg.cc/7P7ckhR0/Screenshot-1008.png" alt="img3">
-<img src="https://i.postimg.cc/C5Nsx3kT/Screenshot-1009.png" alt="img4">
-<img src="https://i.postimg.cc/d3qGp5XW/Screenshot-1010.png" alt="img5">
+<img src="https://i.postimg.cc/L5f2zcjJ/Screenshot-1016.png" alt="img1">
+<img src="https://i.postimg.cc/mDLLWpxq/Screenshot-1012.png" alt="img3">
+<img src="https://i.postimg.cc/kXzgRy86/Screenshot-1013.png" alt="img4">
+<img src="https://i.postimg.cc/9Mbf45tC/Screenshot-1014.png" alt="img5">
 
 
 ## Tech Stacks
