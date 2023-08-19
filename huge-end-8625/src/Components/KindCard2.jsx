@@ -12,7 +12,6 @@ export function KindCard2({property}) {
             <Image  src={property.imageUrl} alt={property.imageAlt} w='650px' h='500px' />
         </Box>
     </Box>
-
     <Box w='40%' m='auto' fontSize={'20px'} fontWeight='500' textAlign={'left'} >
 <Box
           fontWeight="semibold"
@@ -29,7 +28,6 @@ export function KindCard2({property}) {
         </Box> 
     {property.about}
     </Box>
-    
     </Box>
         <Slider  />
  </Box>
