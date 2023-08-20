@@ -22,5 +22,6 @@ KindMeal.my is Malaysia's leading meat-free lifestyle platform , indulging you w
 - Admin Page
 - Checkout Page
 
+
 ## Deployed Link
 <a href="https://khana-khajana-huge-end-8625.netlify.app/">KhanaKhajana.netlify.app</a>
