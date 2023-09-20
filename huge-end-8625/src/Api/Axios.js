@@ -1,23 +1,74 @@
+import { useToast } from '@chakra-ui/react';
 import axios from 'axios'
 import { useState } from 'react';
-export function CreateAccount(data){
-    let ans= axios(
-        {
-            method:"POST",
-            url:"http://localhost:3001/login_data",
-            data:data
-    }
+
+export const CreateAccount= async(data)=>{
+    const toast = useToast()
+//     let value= {
+//         first_name: data.username,
+//         last_name: "hello",
+//         phone_number: 12345,
+//         date_of_birth: "1234",
+//         email: data.email,
+//         password: data.password
+//         }
+     
+//     if(data.username && data.email && data.password){
+//  let ans=await axios(
+//         {
+//             method:"POST",
+//             url:"https://dizzy-tuna-twill.cyclic.app/users/register",
+//             data:value
+//     }
    
-    )
-    return ans;
+//     ).then((e)=>{
+        // toast({
+        //     title: 'Account created.',
+        //     description: "We've created your account for you.",
+        //     status: 'success',
+        //     duration: 3000,
+        //     isClosable: true,
+        //   })
+    // }).catch((e)=>{
+        // toast({
+        //     title: 'Account Allready Created',
+        //     description: "We've are looking for your login.",
+        //     status: 'error',
+        //     duration: 3000,
+        //     isClosable: true,
+        //   })
+    //     })
+   
+    // }else{
+        // toast({
+        //     title: 'Provide All Credentials.',
+        //     description: "We've are looking for your all credentials.",
+        //     status: 'success',
+        //     duration: 3000,
+        //     isClosable: true,
+        //   })
+      
+    // }
+     toast({
+            title: 'Provide All Credentials.',
+            description: "We've are looking for your all credentials.",
+            status: 'success',
+            duration: 3000,
+            isClosable: true,
+          })
+      alert("hii")
     }
 
- export function LoginAccount(data){
-let ans= axios(
+export const  LoginAccount=async (data)=>{
+   let value= {
+        email: data.email,
+        password: data.password
+        }
+let ans=await axios(
             {
                 method:"POST",
-                url:"http://localhost:3001/login_data",
-                data:data
+                url:"https://dizzy-tuna-twill.cyclic.app//users/login",
+                data:value
    }
        
 

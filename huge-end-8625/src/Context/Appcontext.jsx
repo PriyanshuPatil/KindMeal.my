@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createContext } from "react";
 export const Appcontext=createContext();
 function AuthContextProvider({children}) {
-   const [isAuth,setAuth]=useState({"auth":false, "user": null, "password": null ,"category":false});
+   const [isAuth,setAuth]=useState({"auth":false, "user": null, "password": null ,"token":""});
   
 
    const changeState=(obj)=>{
