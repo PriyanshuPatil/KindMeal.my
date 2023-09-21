@@ -5,12 +5,12 @@ import {Text,Spacer,Box,Stack,Alert,AlertIcon,useDisclosure,ModalFooter, Button,
  import { LoginAccount } from '../Api/Axios';
  import { Appcontext } from '../Context/Appcontext';
 import { useContext } from 'react';  
-
+import { useToast } from "@chakra-ui/react";
 function LoginModal(){
   const {isAuth,changeState,logout}=useContext(Appcontext)
   const [password,setpassword]=useState("");
   const [email,setemail]=useState("");
-
+  const toast = useToast();
   const finalRef = React.useRef(null)
 
 const handleChange=(e)=>{
@@ -66,7 +66,7 @@ else {
        <Input  onChange={(e)=>{handleChange(e)}} name={'password'} color='green'  placeholder="Password"></Input> 
        </Box> 
        <Box mt='30px' textAlign={"center"} >
-       <Button onClick={()=>{ MyLogin(password,email,onClose,changeState); onClose();alert('Congratulations!...Account Succesfully Created');}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Login</Button> 
+       <Button onClick={()=>{ MyLogin(password,email,onClose,changeState, toast,changeState); onClose();}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Login</Button> 
        </Box> 
 
        
@@ -91,7 +91,7 @@ else {
 export default LoginModal ;
 
 
-function MyLogin(password,email,onClose,changeState){
- let res=LoginAccount({ "password": password ,"email":email})
+function MyLogin(password,email,onClose,changeState, toast){
+ let res=LoginAccount({ "password": password ,"email":email}, toast,changeState({username:email,password}))
  onClose() ; 
 }

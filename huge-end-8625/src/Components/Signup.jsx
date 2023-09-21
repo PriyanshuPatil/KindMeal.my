@@ -2,8 +2,9 @@ import {Text,Spacer,Box,Stack,Alert,AlertIcon,useDisclosure,ModalFooter, Button,
   import {useState} from 'react';
   import React from 'react';
  import { CreateAccount } from '../Api/Axios';
+ import { useToast } from "@chakra-ui/react";
 function SignupModal(){
-
+  const toast = useToast();
     const [username,setusername]=useState("");
     const [password,setpassword]=useState("");
     const [email,setemail]=useState("");
@@ -70,7 +71,7 @@ function SignupModal(){
          <Input  onChange={(e)=>{handleChange(e)}} name={'password'} color='green'  placeholder="Password"></Input> 
          </Box> 
          <Box mt='30px' textAlign={"center"} >
-         <Button onClick={()=>{CreateAccount({ "username": username, "password": password ,"email":email }) ; onClose();}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Register</Button> 
+         <Button onClick={()=>{CreateAccount({ "username": username, "password": password ,"email":email },toast) ;onClose();}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Register</Button> 
          </Box> 
 
          

@@ -4,7 +4,7 @@ import { HomeData } from "../Components/HomeData";
 import LoginModal from "../Components/Signup";
 function Home(){
     return (
-        <Box m='auto' w='70%'>
+        <Box m='auto' w='75%'>
         <Slider/>
         <HomeData/>
         </Box>

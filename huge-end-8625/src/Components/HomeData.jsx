@@ -14,31 +14,31 @@ return (
         <Text m='auto 10px'> •  </Text>
         <Link color="blue" fontSize='13px' m='auto' >{props.linkdata3}</Link>
     </Flex>
-    <Flex gap='15px' mt='10px'  >
+    <Flex gap='10px' mt='10px'  >
         <Box w='19%' >
-            <Image src={props.imgurl1} h='150px' w='100%'/>
-            <Text fontSize='12px' color='gray'>{props.imgtext1}</Text>
-            <Text fontSize='11px'>{props.author1}</Text>
+            <Image src={props.imgurl1} h='200px' w='100%'/>
+            <Text fontSize='14px' color='gray'>{props.imgtext1}</Text>
+            <Text fontSize='12px'>{props.author1}</Text>
         </Box>
         <Box w='19%'>
-            <Image src={props.imgurl2} h='150px' w='100%'/>
-            <Text fontSize='12px' color='gray'>{props.imgtext2}</Text>
-            <Text fontSize='11px'>{props.author2}</Text>
+            <Image src={props.imgurl2} h='200px' w='100%'/>
+            <Text fontSize='14px' color='gray'>{props.imgtext2}</Text>
+            <Text fontSize='12px'>{props.author2}</Text>
         </Box>
         <Box w='19%'>
-            <Image src={props.imgurl3} h='150px'w='100%'/>
-            <Text fontSize='12px' color='gray'>{props.imgtext3}</Text>
-            <Text fontSize='11px'>{props.author3}</Text>
+            <Image src={props.imgurl3} h='200px'w='100%'/>
+            <Text fontSize='14px' color='gray'>{props.imgtext3}</Text>
+            <Text fontSize='12px'>{props.author3}</Text>
         </Box>
         <Box w='19%'>
-            <Image src={props.imgurl4}  h='150px' w='100%'/>
-            <Text fontSize='12px' color='gray'>{props.imgtext4}</Text>
-            <Text fontSize='11px'>{props.author4}</Text>
+            <Image src={props.imgurl4}  h='200px' w='100%'/>
+            <Text fontSize='14px' color='gray'>{props.imgtext4}</Text>
+            <Text fontSize='12px'>{props.author4}</Text>
         </Box>
         <Box w='19%'>
-            <Image src={props.imgurl5} h='150px' w='100%'/>
-            <Text fontSize='12px' color='gray'>{props.imgtext5}</Text>
-            <Text fontSize='11px'>{props.author5}</Text>
+            <Image src={props.imgurl5} h='200' w='100%'/>
+            <Text fontSize='14px' color='gray'>{props.imgtext5}</Text>
+            <Text fontSize='12px'>{props.author5}</Text>
         </Box>
     </Flex>
     </Box>
@@ -52,20 +52,20 @@ export function HomeData(){
       linkdata1:"Save Lives with Your Blog",
       linkdata2:"News & Articles",
       linkdata3:"Follow Our Facebook",
-      imgurl1:"https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/83909250_515842169093530_1287344682367451136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=FoawV48DSOkAX-_cXga&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfCQqxoUNCWnCKqhFmJ_LOqP_nyoQLqonzb7sa4cow83Yw&oe=6372BB55",
-      imgtext1:"Tornado Potatoes 🌪🥔",
+      imgurl1:"https://i.postimg.cc/k53086Vh/372387315-326327356434652-7843122652551500740-n.jpg",
+      imgtext1:"Duckling Was Afraid Of The Water Until This Girl Teaches Him..",
       author1:"",
-      imgurl2:"https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/298969854_601112454850438_5265806124209675410_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=WZDVFJjewEIAX9CbLYZ&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfByIQuo6q_FP-_uissbga9dKo123Gd0OfckEL4aQgVXwA&oe=6372D358",
-      imgtext2:"Mama And Baby Elephant Get Stuck In 7 Foot Hole",
+      imgurl2:"https://i.postimg.cc/dVYMZZZN/170053992-295844292090384-1570598295181544427-n.jpg",
+      imgtext2:"The Octopus: An Alien Among Us?",
       author2:"",
-      imgurl3:"https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/271582707_265022372394889_56974782009965446_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=AvnOZmUGPm4AX9yLKFO&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfDGKeW6MyGzXI8ZactDSRY_wK7sPNoOJDPG8z5d90C6nA&oe=6372E4A3",
-      imgtext3:"Watch These White Fluffy Babies Turn Into The Most Gorgeous ..",
+      imgurl3:"https://i.postimg.cc/C533NzP1/376429501-995400045065411-1122861520430673708-n.jpg",
+      imgtext3:"Delicious, Fresh, Tasty Crispy Tofu Dal",
       author:"",
-      imgurl4:"https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/117878469_336434917736037_3866333495709289709_n.jpg?stp=dst-jpg_s720x720&_nc_cat=106&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=LJ4Mzxi0yckAX9Yttmo&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfDPk7hZf7M4PRZTN0ePz5giA6irwysp_DltNLwLdl4bxA&oe=63721345",
-      imgtext4:"Goulash & Dumplings From Speedy Bosh!",
+      imgurl4:"https://i.postimg.cc/QxB5KHZ7/355970594-2435378753288306-2950729409996334444-n.jpg",
+      imgtext4:"Lost Pigeon Loves Waking Her New Owner Up With Morning Kisse..",
       author4:"",
-      imgurl5:"https://scontent-xsp1-2.xx.fbcdn.net/v/t15.5256-10/289716764_300414298892410_2889986081793667301_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ad6a45&_nc_ohc=RwwitqaIrFQAX8XdIRZ&_nc_ht=scontent-xsp1-2.xx&edm=ALdPpPkEAAAA&oh=00_AfBG0NyVNzSBoXHKEvuZJn5c-APbTni-1icvJy-JutUFdw&oe=6372D9B0",
-      imgtext5:"Best Friends At Off The Plate Sanctuary",
+      imgurl5:"https://i.postimg.cc/G2ythsy3/367291301-3512725142376874-4612718823293778278-n.jpg",
+      imgtext5:"People Used This Bear For Selfies, But He Was Made For Freed..",
       author5:""
 
     }
@@ -74,21 +74,21 @@ export function HomeData(){
         linkdata1:"Secret Recipes",
         linkdata2:"Member Hot Picks ",
         linkdata3:" Photo Moments",
-        imgurl1:"https://www.kindmeal.my/photos/moment/24/24609-47688-s.jpg",
-        imgtext1:"Fusion Western Delicacies",
-        author1:"William21",
-        imgurl2:"https://www.kindmeal.my/photos/moment/24/24604-47676-s.jpg",
-        imgtext2:"Seed Organic Farm & Wholesome Dining",
-        author2:"VyVian",
-        imgurl3:"https://www.kindmeal.my/photos/moment/24/24597-47663-s.jpg",
-        imgtext3:"Malaysian Favorites & Ramen",
-        author3:"FatJedi",
-        imgurl4:"https://www.kindmeal.my/photos/moment/24/24596-47660-s.jpg",
-        imgtext4:"Malaysian Favorites & Ramen",
-        author4:"WongEeLynn",
-        imgurl5:"https://www.kindmeal.my/photos/moment/24/24595-47657-s.jpg",
-        imgtext5:"Simple Is the Best",
-        author5:"FoodLover422"
+        imgurl1:"https://i.postimg.cc/W1Z8MDVC/25784-51839-s.jpg",
+        imgtext1:"Japanese Fusion Delights",
+        author1:"mmteh75",
+        imgurl2:"https://i.postimg.cc/rwv8PPvz/25783-51838-s-1.jpg",
+        imgtext2:"A Delicious Connection",
+        author2:"mmteh75",
+        imgurl3:"https://i.postimg.cc/K899cXZv/25782-51836-s.jpg",
+        imgtext3:"Pure Heart Vegetarian",
+        author3:"William21",
+        imgurl4:"https://i.postimg.cc/dtCvTB7Y/25780-51829-s.jpg",
+        imgtext4:"Good Food By Gan",
+        author4:"YeeHuanGan",
+        imgurl5:"https://i.postimg.cc/qqTfcf6H/25777-51814-s.jpg",
+        imgtext5:"A Delicious KindMoment",
+        author5:"MayNg"
   
       }
       const carddata3={
@@ -96,20 +96,20 @@ export function HomeData(){
         linkdata1:"Vegetarian Directory",
         linkdata2:"Restaurant Menu",
         linkdata3:"Food Map",
-        imgurl1:"https://www.kindmeal.my/photos/item/0/353-3796-s.jpg",
-        imgtext1:"Vegetarian Fish Head Vermicelli 余头米粉面",
+        imgurl1:"https://i.postimg.cc/5y46yztv/305-3195-s.jpg",
+        imgtext1:"Fruit Juice",
         author1:"",
-        imgurl2:"https://www.kindmeal.my/photos/item/0/583-8129-s.jpg",
-        imgtext2:"Aglio e Olio with Beyond Sausage",
+        imgurl2:"https://i.postimg.cc/ydycds7J/567-7919-s.jpg",
+        imgtext2:"Bibimbap",
         author2:"",
-        imgurl3:"https://www.kindmeal.my/photos/item/0/538-7371-s.jpg",
-        imgtext3:"Creamy Mushroom Pumpkin",
+        imgurl3:"https://i.postimg.cc/XYB2vGmp/350-3728-s.jpg",
+        imgtext3:"Pesto Pasta",
         author3:"",
-        imgurl4:"https://www.kindmeal.my/photos/item/0/601-8769-s.jpg",
-        imgtext4:"Hakka Cha Nyuk Rice",
+        imgurl4:"https://i.postimg.cc/bYbkd0wX/125-1122-s.jpg",
+        imgtext4:"Green Bean Pancake with Coconut",
         author4:"",
-        imgurl5:"https://www.kindmeal.my/photos/item/0/121-1080-s.jpg",
-        imgtext5:"Choc Waffle with Homemade Peanut Butter ..",
+        imgurl5:"https://i.postimg.cc/Y0prrwSC/213-2140-s.jpg",
+        imgtext5:"Mushroom Risotto",
         author5:""
   
       }
@@ -118,30 +118,30 @@ export function HomeData(){
         linkdata1:"Latest Buzz ",
         linkdata2:"Lifestyle Ambassadors",
         linkdata3:"Win Gifts!",
-        imgurl1:"https://www.kindmeal.my/photos/member/39/39580-m.jpg",
-        imgtext1:"RajeshKothari",
+        imgurl1:"https://i.postimg.cc/nzhmWqGr/10072-m.jpg",
+        imgtext1:"WongEeLynn",
         author1:"",
-        imgurl2:"https://www.kindmeal.my/photos/member/39/39004-m.jpg",
+        imgurl2:"https://i.postimg.cc/NGmc9Zcs/39004-m.jpg",
         imgtext2:"GeetaanjalliLingam",
         author2:"",
-        imgurl3:"https://www.kindmeal.my/photos/member/38/38516-m.jpg",
+        imgurl3:"https://i.postimg.cc/7L0VM1Y2/38516-m.jpg",
         imgtext3:"JingShun",
         author3:"",
-        imgurl4:"https://www.kindmeal.my/photos/member/41/41396-m.jpg",
+        imgurl4:"https://i.postimg.cc/BZVKbLJ9/41396-m.jpg",
         imgtext4:"LeebeeEng",
         author4:"",
-        imgurl5:"https://www.kindmeal.my/photos/member/33/33305-m.jpg",
-        imgtext5:"ZeeYinzhiCheong",
+        imgurl5:"https://i.postimg.cc/3r1h7VQd/17366-m.jpg",
+        imgtext5:"YuehTyanChuah",
         author5:""
   
       }
 
       return (
         <Box>
-        <Carddata props={carddata1} />
         <Carddata props={carddata2} />
         <Carddata props={carddata3} />
         <Carddata props={carddata4} />
+        <Carddata props={carddata1} />
         </Box>
       )
 
