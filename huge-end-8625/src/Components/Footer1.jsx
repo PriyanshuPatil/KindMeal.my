@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 
 export default function Footer1(){
     const Props1 = {
@@ -23,10 +23,10 @@ export default function Footer1(){
     }
     return (
         <>
-            <Center w='70% ' m='auto' >
+            <Center w={{ base: "70%", sm:"70%", md:"90%" }} m='auto' >
                
                 <Box mt='50px' mb='30px'  >
-                    <Heading color='#666666'>Introducing The World's 1st Meat-Free Lifestyle Platform</Heading>
+                    <Heading fontSize={{ base:"20px" , sm:"10px", md:"25px" }} color='#666666'>Introducing The World's 1st Meat-Free Lifestyle Platform</Heading>
                     <Flex justifyContent='center' mt={5} mb='30px'  gap={5}  >
                         <Text color='#999999' fontSize='2vw'  >Brought to you by</Text><Image w='32%'  src="https://www.kindmeal.my/images/logo-petfinder.png" ></Image>
                     </Flex>
@@ -35,14 +35,14 @@ export default function Footer1(){
             </Center>
 
 
-            <Center w='70% ' m='auto' >
-                <Box w='80%' mt='10px' mb='20px' >
-                    <Flex gap={8} >
+            <Center w={{ base:"90%" , sm:"90%", md:"70%" }} m='auto' >
+                <Box w='90%' m={"auto"} >
+                    <Grid gap={{ base:2 , sm:2, md:8 }} gridTemplateColumns={{ base:"repeat(4,1fr)" , sm:"repeat(4,1fr)", md:"repeat(4,1fr)" }} >
                         <Card props={Props1}     />
                         <Card props={Props2}     />
                         <Card props={Props3}     />
                         <Card props={Props4}     />
-                    </Flex>
+                    </Grid>
                 </Box>
             </Center>
 
@@ -53,9 +53,9 @@ export default function Footer1(){
                 Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!</Text>
             </Center>
             <Center w='70% ' m='auto' >
-                <Box w='30%' mt='20px' mb='15px' rounded={10}  bg='red.500' p={5} color='#fff' >
-                    <Text fontSize='2xl' >Join KindMeal Now</Text>
-                    <Text fontSize='small' >Your tasty journey begins here</Text>   
+                <Box  mt='20px' mb='15px' rounded={10}  bg='red.500' p={5} color='#fff' >
+                    <Text fontSize={{ base: 15, sm: 20, md: 30 }} >Join KindMeal Now</Text>
+                    <Text fontSize={{ base: 8, sm: 17, md: 15 }} >Your tasty journey begins here</Text>   
                 </Box>
             </Center>
             <Center w='70% ' m='auto' >
@@ -67,7 +67,7 @@ export default function Footer1(){
             </Box>
 
             <Box >
-                <Image w='70% ' m='auto' src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="home_footer_image" />
+                <Image w='80% ' m='auto' src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="home_footer_image" />
             </Box>
 
         </>
@@ -79,7 +79,7 @@ export default function Footer1(){
 function Card({props}){
     return(
         <Center >
-            <Flex className="featureCard" rounded='20px' p={4} h='300px' flexDirection='column' justifyContent='center' alignItems='center' color='#666666'  >
+            <Flex className="featureCard" rounded='20px' p={4}  flexDirection='column' justifyContent='center' alignItems='center' color='#666666'  >
                 <Image src={props.src}  w='80%'       />
                 <Text fontSize='1.55vw'  > {props.heading}  </Text>
                 <Text fontSize='0.95vw' > {props.text} </Text>

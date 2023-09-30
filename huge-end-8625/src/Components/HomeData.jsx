@@ -1,46 +1,46 @@
-import {Box,Flex,Heading,Text,Spacer,Link,Image} from '@chakra-ui/react'
+import {Box,Flex,Heading,Text,Spacer,Link,Image, Grid} from '@chakra-ui/react'
 
 function Carddata({props,bg}){
 
 return (
-    <Box bg={bg} pt='30px' pb='30px'>
+    <Box bg={bg} pt='30px' pb='30px' >
     <Box  p='20px'   bg='#f2fffe' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;' >
     <Flex >
-        <Text fontSize='21px' color='gray.500'>{props.Heading}</Text>
+        <Text fontSize={{ base:"18px" , sm:"22px", md:"25px" }} color='gray.500'>{props.Heading}</Text>
         <Spacer/>
-        <Link color="blue" fontSize='13px' m='auto' >{props.linkdata1}</Link>
-        <Text m='auto 10px'> •  </Text>
-        <Link color="blue" fontSize='13px' m='auto' >{props.linkdata2}</Link>
-        <Text m='auto 10px'> •  </Text>
-        <Link color="blue" fontSize='13px' m='auto' >{props.linkdata3}</Link>
+        <Link display={{ base:"none" , sm:"flex", md:"flex" }} color="blue" fontSize='13px' m='auto' >{props.linkdata1}</Link>
+        <Text display={{ base:"none" , sm:"flex", md:"flex" }} m='auto 10px'> •  </Text>
+        <Link display={{ base:"none" , sm:"flex", md:"flex" }} color="blue" fontSize='13px' m='auto' >{props.linkdata2}</Link>
+        <Text display={{ base:"none" , sm:"flex", md:"flex" }} m='auto 10px'> •  </Text>
+        <Link display={{ base:"none" , sm:"flex", md:"flex" }} color="blue" fontSize='13px' m='auto' >{props.linkdata3}</Link>
     </Flex>
-    <Flex gap='10px' mt='10px'  >
-        <Box w='19%' >
+    <Grid gap='10px' mt='30px' gridTemplateColumns={{ base:"repeat(1,1fr)" , sm:"repeat(2,1fr)", md:"repeat(5,1fr)" }}  >
+        <Box  >
             <Image src={props.imgurl1} h='200px' w='100%'/>
             <Text fontSize='14px' color='gray'>{props.imgtext1}</Text>
             <Text fontSize='12px'>{props.author1}</Text>
         </Box>
-        <Box w='19%'>
+        <Box >
             <Image src={props.imgurl2} h='200px' w='100%'/>
             <Text fontSize='14px' color='gray'>{props.imgtext2}</Text>
             <Text fontSize='12px'>{props.author2}</Text>
         </Box>
-        <Box w='19%'>
+        <Box >
             <Image src={props.imgurl3} h='200px'w='100%'/>
             <Text fontSize='14px' color='gray'>{props.imgtext3}</Text>
             <Text fontSize='12px'>{props.author3}</Text>
         </Box>
-        <Box w='19%'>
+        <Box >
             <Image src={props.imgurl4}  h='200px' w='100%'/>
             <Text fontSize='14px' color='gray'>{props.imgtext4}</Text>
             <Text fontSize='12px'>{props.author4}</Text>
         </Box>
-        <Box w='19%'>
+        <Box>
             <Image src={props.imgurl5} h='200' w='100%'/>
             <Text fontSize='14px' color='gray'>{props.imgtext5}</Text>
             <Text fontSize='12px'>{props.author5}</Text>
         </Box>
-    </Flex>
+    </Grid>
     </Box>
     </Box>
 )
@@ -137,7 +137,7 @@ export function HomeData(){
       }
 
       return (
-        <Box>
+        <Box >
         <Carddata props={carddata2} />
         <Carddata props={carddata3} />
         <Carddata props={carddata4} />

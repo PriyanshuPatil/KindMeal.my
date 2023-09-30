@@ -6,7 +6,7 @@ function Home(){
     return (
         <Box m='auto' w='75%'>
         <Slider/>
-        <HomeData/>
+         <HomeData/> 
         </Box>
     )
 }

@@ -33,7 +33,7 @@ if(loading){
       {meals.map((el)=>{
         return (
         <>
-        <Box  onClick={()=>{navigate(`/meals/${el.id}`)}} >
+        <Box  onClick={()=>{navigate(`/meals/${el._id}`)}} >
         <DealsCard property={el}/>
         </Box>
         </>

@@ -67,22 +67,22 @@ const inc2=()=>{
         <BookingConfirm 
         
         data1={
-          {"item":"Tanduri Roti","quantity": rice1,"status":false,price:"10","username":isAuth.user  }
+          {"item":"Tanduri Roti","quantity": rice1,"status":false,price:"10","username":isAuth.username,"total":total  }
         }
         data2={
-          {"item":"Kaju Curry","quantity": rice2,"status":false,price:"189" ,"username":isAuth.user }
+          {"item":"Kaju Curry","quantity": rice2,"status":false,price:"189" ,"username":isAuth.username ,"total":total }
         }
         data3={
-          {"item":"Paneer Tikka","quantity": rice3,"status":false,price:"245"  ,"username":isAuth.user}
+          {"item":"Paneer Tikka","quantity": rice3,"status":false,price:"245"  ,"username":isAuth.username,"total":total }
         }
         data4={
-          {"item":"Chana Masala","quantity": rice4,"status":false,price:"220" ,"username":isAuth.user }
+          {"item":"Chana Masala","quantity": rice4,"status":false,price:"220" ,"username":isAuth.username ,"total":total }
         }
         data5={
-          {"item":"Gulab Jamun","quantity": rice5,"status":false,price:"90" ,"username":isAuth.user }
+          {"item":"Gulab Jamun","quantity": rice5,"status":false,price:"90" ,"username":isAuth.username,"total":total  }
         }
         data6={
-          {"item":"Shahi Pulao","quantity": rice6,"status":false,price:"70" ,"username":isAuth.user }
+          {"item":"Shahi Pulao","quantity": rice6,"status":false,price:"70" ,"username":isAuth.username }
         } />
         </>
     )

@@ -34,7 +34,7 @@ if(loading){
       {meals.map((el)=>{
         return (
     //    
-        <Box  onClick={()=>{navigate(`/moments/${el.id}`)}}>
+        <Box  onClick={()=>{navigate(`/moments/${el._id}`)}}>
         <KindCard property={el}/>
    </Box>
         )

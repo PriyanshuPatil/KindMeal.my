@@ -14,7 +14,7 @@ export const Slider = () => {
     return (
       <Box  mt='10px' mb='20px' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;'>
         <SimpleImageSlider
-          width={'72.5%'}
+          width={'75%'}
           margin='auto'
           height={'250px'}
           images={images}

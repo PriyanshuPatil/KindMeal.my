@@ -18,7 +18,7 @@ export const CreateAccount = async (data, toast) => {
   if (data.username && data.email && data.password) {
     let ans = await axios({
       method: "POST",
-      url: "https://dizzy-tuna-twill.cyclic.app/users/register",
+      url: "https://dizzy-tuna-twill.cyclic.app/user/register",
       data: value,
     })
       .then((e) => {
@@ -60,7 +60,7 @@ export const LoginAccount = async (data, toast,changeState) => {
   if(data.email && data.password){
  let ans = await axios({
     method: "POST",
-    url: "https://dizzy-tuna-twill.cyclic.app//users/login",
+    url: "https://enchanting-teal-llama.cyclic.cloud/user/login",
     data: value,
   }).then((e)=>{
     toast({
@@ -94,7 +94,7 @@ export const LoginAccount = async (data, toast,changeState) => {
 };
 
 export const DealsData = (page, limit) => {
-  return axios(`http://localhost:3001/meals`, {
+  return axios(`https://enchanting-teal-llama.cyclic.cloud/meals`, {
     params: {
       _page: page,
       _limit: limit,
@@ -102,11 +102,11 @@ export const DealsData = (page, limit) => {
   });
 };
 export const DealsDataOne = (id) => {
-  return axios(`http://localhost:3001/meals/${id}`);
+  return axios(`https://enchanting-teal-llama.cyclic.cloud/meals/${id}`);
 };
 
 export const KindsData = (page, limit) => {
-  return axios(`http://localhost:3001/moments`, {
+  return axios(`https://enchanting-teal-llama.cyclic.cloud/moments`, {
     params: {
       _page: page,
       _limit: limit,
@@ -115,13 +115,13 @@ export const KindsData = (page, limit) => {
 };
 
 export const KindsDataOne = (id) => {
-  return axios(`http://localhost:3001/moments/${id}`);
+  return axios(`https://enchanting-teal-llama.cyclic.cloud/moments/${id}`);
 };
 
 export function Order(data) {
   let ans = axios({
     method: "POST",
-    url: "http://localhost:3001/order",
+    url: "https://enchanting-teal-llama.cyclic.cloud/order",
     data: data,
   });
 
@@ -131,7 +131,7 @@ export function Order(data) {
 export function GetOrder() {
   let ans = axios({
     method: "GET",
-    url: "http://localhost:3001/order",
+    url: "https://enchanting-teal-llama.cyclic.cloud/order",
   });
   return ans;
 }
@@ -139,7 +139,7 @@ export function GetOrder() {
 export function DeliteOrder(id) {
   let ans = axios({
     method: "DELETE",
-    url: `http://localhost:3001/order/${id}`,
+    url: `https://enchanting-teal-llama.cyclic.cloud/order/${id}`,
   });
 
   return ans;
@@ -148,7 +148,7 @@ export function DeliteOrder(id) {
 export function UpdateData(id, data) {
   let ans = axios({
     method: "PATCH",
-    url: `http://localhost:3001/order/${id}`,
+    url: `https://enchanting-teal-llama.cyclic.cloud/order/${id}`,
     data: data,
   });
 
