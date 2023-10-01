@@ -1,7 +1,7 @@
-import { Box,Flex,Spacer,Heading ,Button} from '@chakra-ui/react';
+import { Box,Flex,Spacer,Heading ,Button, useToast} from '@chakra-ui/react';
 
 export function AdminCard({data,ondelite,onupdate}){
-
+    const toast = useToast();
    const {quantity,status,price,username,_id} =data
     return (
         <>
@@ -11,10 +11,10 @@ export function AdminCard({data,ondelite,onupdate}){
             <Heading m='auto' color={'yellow.900'}  ml='5px' fontSize={{base:'18px',sm:'18px', md:'18px',lg:'22px' }} >Qty:- {quantity}</Heading>
               <Heading m='auto' color={'yellow.900'}  ml='5px' fontSize={{base:'18px',sm:'18px', md:'18px',lg:'22px' }} >₹ {price}</Heading>
               <Heading m='auto' color={'yellow.900'}  ml='5px' fontSize={{base:'18px',sm:'18px', md:'18px',lg:'22px' }} >{username}</Heading>
-              <Heading m='auto' color={'yellow.900'}  ml='5px' fontSize={{base:'18px',sm:'18px', md:'18px',lg:'22px' }} >{status?"Done":"Panding.."}</Heading>
+              <Heading m='auto' color={'yellow.900'}  ml='5px' fontSize={{base:'18px',sm:'18px', md:'18px',lg:'22px' }} >{status?"Done":"Pending.."}</Heading>
             <Box gap='10px'  ml='5px'>
-               <Button ml='5px'   border='3px solid black'onClick={()=>{onupdate(_id,{...[data],status:!status})}}  _hover={{color:"black"}} fontWeight={'500'} fontSize='17px' bg={'green'} color='white'>Confirm</Button>
-                <Button ml='5px'  border='3px solid black' onClick={()=>{ondelite(_id)}} fontWeight={'500'}  fontSize='17px' bg={'yellow'} >Cancel</Button>
+               <Button ml='5px'   border='3px solid black'onClick={()=>{onupdate(_id,{...[data],status:!status},toast)}}  _hover={{color:"black"}} fontWeight={'500'} fontSize='17px' bg={'green'} color='white'>Confirm</Button>
+                <Button ml='5px'  border='3px solid black' onClick={()=>{ondelite(_id,toast)}} fontWeight={'500'}  fontSize='17px' bg={'yellow'} >Cancel</Button>
               
             </Box>
            

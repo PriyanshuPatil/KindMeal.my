@@ -113,9 +113,10 @@ export const KindsDataOne = (id) => {
 };
 
 export function Order(data) {
+  console.log(data) ;
   let ans = axios({
     method: "POST",
-    url: "https://enchanting-teal-llama.cyclic.cloud/orders",
+    url: "https://enchanting-teal-llama.cyclic.cloud/order",
     data: data,
   });
 
@@ -143,7 +144,6 @@ export function UpdateData(id, data) {
   let ans = axios({
     method: "PATCH",
     url: `https://enchanting-teal-llama.cyclic.cloud/order/${id}`,
-    data: data,
   });
 
   return ans;
