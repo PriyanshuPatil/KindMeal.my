@@ -7,7 +7,6 @@ function AuthContextProvider({children}) {
 
    const changeState=(obj)=>{
     setAuth({...isAuth,"auth":true,"username": obj.username, "password": obj.password,"token":obj.token});
-   console.log(isAuth)
    }
 
    

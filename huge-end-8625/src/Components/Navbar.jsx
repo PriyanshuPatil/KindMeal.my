@@ -25,7 +25,7 @@ const navigate = useNavigate();
          </Box>
          <Spacer/>
         
-       {isAuth.auth && <NAV_After isAuth={isAuth}/> || <NAV_Before/>}
+       {isAuth.auth && <NAV_After isAuth={isAuth} navigate={navigate}/> || <NAV_Before/>}
          </Flex>
         </Box>
         <Box background={'white'}>
@@ -57,12 +57,13 @@ const navigate = useNavigate();
 }
 
 
-function NAV_After({isAuth}){
+function NAV_After({isAuth,navigate}){
 
   return (
-    <Box  gap={{base:"5px",lg:'5px' ,sm:"5px", md:"5px"}}  display={'grid'} gridTemplateColumns={{base:'repeat(2, 1fr)',lg:'repeat(4, 1fr)' ,sm:'repeat(2, 1fr)', md:'repeat(2, 1fr)'}}>
+    <Box  gap={{base:"5px",lg:'5px' ,sm:"5px", md:"5px"}} onClick={()=>{navigate("/admin")}
+    }  display={'grid'} gridTemplateColumns={{base:'repeat(2, 1fr)',lg:'repeat(4, 1fr)' ,sm:'repeat(2, 1fr)', md:'repeat(2, 1fr)'}}>
     <Image w={{base:"1.5rem",lg:'2rem' ,sm:"2rem", md:"2.5rem"}} h={{base:"1.5rem",lg:'2rem' ,sm:"2rem", md:"1.5rem"}} m='auto' src="https://www.kindmeal.my/images/icon_notice.png"></Image>
- <Box m="auto" fontSize={'14px'} color={'grey'} >{isAuth.username}</Box> 
+ <Box m="auto" display={{ base:"none" , sm:"none", md:"flex",lg:"flex" }}  fontSize={'14px'} color={'grey'} >{isAuth.username}</Box> 
       <LogoutModal/>
     </Box>
   )

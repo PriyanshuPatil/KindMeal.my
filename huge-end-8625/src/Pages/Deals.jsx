@@ -28,7 +28,7 @@ if(loading){
 }
 
     return (
-        <Box m='auto' w='80%'>
+        <Box m='auto' w={{base:'90%',sm:'90%', md:'85%',lg:'80%' }}>
         
       {meals.map((el)=>{
         return (
@@ -39,7 +39,7 @@ if(loading){
         </>
         )
       })}
-      <Pagination current={page} onChange={page2} onChange1={page1}/>
+      {/* <Pagination current={page} onChange={page2} onChange1={page1}/> */}
         </Box>
     )
 }

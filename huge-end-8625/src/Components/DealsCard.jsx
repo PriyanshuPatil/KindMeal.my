@@ -2,9 +2,9 @@ import { Box, Image, Badge } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 export function DealsCard({property}) {
   return (
-    <Box bg='gray.200' w='90%' m='auto' fontSize={'19px'} mt='3%' borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
+    <Box bg='gray.200' w='90%' m='auto' fontSize={'19px'} mt='3%' borderWidth="1px" borderRadius="lg" overflow="hidden" display={"grid"} gap={"20px"} gridTemplateColumns={{base:'repeat(1, 1fr)',sm:'repeat(1, 1fr)', md:'repeat(2, 1fr)',lg:'repeat(2, 1fr)' }} >
         <Box>
-            <Image  src={property.imageUrl} alt={property.imageAlt} w='450px' h='320px' />
+            <Image  src={property.imageUrl} alt={property.imageAlt} w="100%" h={{base:'200px',sm:'250px', md:'280px',lg:'320px' }} />
         </Box>
       
 
@@ -14,9 +14,9 @@ export function DealsCard({property}) {
           as="h4"
           lineHeight="tight"
           noOfLines={1}
-          fontSize='27px'
+          fontSize={{base:'=22px',sm:'22px', md:'25px',lg:'27px' }}
           mt='10px' 
-          textAlign='left'
+          textAlign='center'
         >
           {property.title}
         </Box> 

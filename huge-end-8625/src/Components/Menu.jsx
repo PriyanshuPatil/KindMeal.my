@@ -93,7 +93,7 @@ function HotalMenuList(){
     return (
   <Box  fontFamily={'Monospace'}  bg='gray.400' color='green' gap='0px' w='100%' m='auto' mt='5px' mb='5px' p="1% 3%"  fontSize={'15px'} borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
    
-    <Heading ml='45%' color={'black'} fontSize={'25px'} textAlign={'center'} fontFamily={'Monospace'}>Hotal Menu</Heading >
+    <Heading marginLeft={{base:'38%',sm:'40%', md:'43%',lg:'45%' }} color={'black'} fontSize={{base:'18px',sm:'25px', md:'28px',lg:'32px' }} alignItems={"center"} textAlign={'center'} fontFamily={'Monospace'}>Hotal Menu</Heading >
   </Box>)
 }
 
@@ -101,7 +101,7 @@ function Total(props){
     const {total}=props ;
     return (<Box  fontFamily={'Monospace'}  bg='gray.400' color='green' gap='0px' w='100%' m='auto' mt='5px' mb='5px' p="1% 3%"  fontSize={'15px'} borderWidth="1px" borderRadius="lg" overflow="hidden" display={'flex'}>
    
-    <Heading ml='45%' color={'black'} fontSize={'25px'} textAlign={'center'} fontFamily={'Serif'}>Total:- ₹{total}</Heading >
+    <Heading marginLeft={{base:'40%',sm:'40%', md:'43%',lg:'45%' }} color={'black'} fontSize={{base:'px',sm:'25px', md:'28px',lg:'32px' }} textAlign={'center'} fontFamily={'Serif'}>Total:- ₹{total}</Heading >
   </Box>)
 }
 

@@ -7,7 +7,7 @@ import {Text,Spacer,Box,Stack,Alert,AlertIcon,useDisclosure,ModalFooter, Button,
 import { useContext } from 'react';  
 import { useToast } from "@chakra-ui/react";
 function LoginModal(){
-  const {isAuth,changeState,logout}=useContext(Appcontext)
+  const {isAuth,changeState,logout,token}=useContext(Appcontext)
   const [password,setpassword]=useState("");
   const [email,setemail]=useState("");
   const toast = useToast();
@@ -66,7 +66,7 @@ else {
        <Input  onChange={(e)=>{handleChange(e)}} name={'password'} color='green'  placeholder="Password"></Input> 
        </Box> 
        <Box mt='30px' textAlign={"center"} >
-       <Button onClick={()=>{ MyLogin(password,email,onClose,changeState, toast,changeState); onClose();}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Login</Button> 
+       <Button onClick={()=>{ MyLogin(password,email,changeState,toast,onClose,token)}}  name={'email'} color='white' backgroundColor={"green"} w={"50%"} alignContent={"center"} >Login</Button> 
        </Box> 
 
        
@@ -91,7 +91,7 @@ else {
 export default LoginModal ;
 
 
-function MyLogin(password,email,onClose,changeState, toast){
- let res=LoginAccount({ "password": password ,"email":email}, toast,changeState({username:email,password}))
+function MyLogin(password,email,changeState,toast,onClose,token){
+ let res=LoginAccount({ "password": password ,"email":email},toast,changeState,{tokenis:token})
  onClose() ; 
 }

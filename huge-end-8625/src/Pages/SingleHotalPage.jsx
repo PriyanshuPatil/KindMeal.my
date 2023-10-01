@@ -22,8 +22,8 @@ function SingleHotalPage(){
     }
 
     return (
-        <Box bg='black' p='50px' pb="500px">
-            <Box  align='center'  w='80%' m='auto' >
+        <Box bg='black' p='50px' >
+            <Box  align='center'  w={{base:'100%',sm:'90%', md:'85%',lg:'80%'}}  m='auto' >
       <HotalCard property={meals}/>
      
       <Menu/> 
@@ -37,7 +37,7 @@ function SingleHotalPage(){
 export default SingleHotalPage ;
 
 
-function GetaData(setMeals,hotal){    console.log(hotal);
+function GetaData(setMeals,hotal){ console.log(hotal);
 
     DealsDataOne(hotal)
 .then(

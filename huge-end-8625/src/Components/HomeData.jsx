@@ -1,10 +1,11 @@
 import {Box,Flex,Heading,Text,Spacer,Link,Image, Grid} from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 
 function Carddata({props,bg}){
-
+const navigate=useNavigate()
 return (
     <Box bg={bg} pt='30px' pb='30px' >
-    <Box  p='20px'   bg='#f2fffe' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;' >
+    <Box  p='20px' onClick={()=>{navigate("/meals")}}   bg='#f2fffe' boxShadow='rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;' >
     <Flex >
         <Text fontSize={{ base:"18px" , sm:"22px", md:"25px" }} color='gray.500'>{props.Heading}</Text>
         <Spacer/>

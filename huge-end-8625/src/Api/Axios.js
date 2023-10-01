@@ -7,38 +7,35 @@ import { Appcontext } from "../Context/Appcontext";
 
 export const CreateAccount = async (data, toast) => {
   let value = {
-    first_name: data.username,
-    last_name: "hello",
-    phone_number: 12345,
-    date_of_birth: "1234",
+    username: data.username,
     email: data.email,
     password: data.password,
   };
 
   if (data.username && data.email && data.password) {
-    let ans = await axios({
+    try{
+     let ans = await axios({
       method: "POST",
-      url: "https://dizzy-tuna-twill.cyclic.app/user/register",
+      url: "https://enchanting-teal-llama.cyclic.cloud/user/register",
       data: value,
-    })
-      .then((e) => {
-        toast({
-          title: "Account created.",
-          description: "We've created your account for you.",
-          status: "success",
-          duration: 3000,
-          isClosable: true,
-        });
-      })
-      .catch((e) => {
-        toast({
-          title: "Account Allready Created",
-          description: "We've are looking for your login.",
-          status: "error",
-          duration: 3000,
-          isClosable: true,
-        });
+    }) 
+    toast({
+      title: "Account created.",
+      description: "We've created your account for you.",
+      status: "success",
+      duration: 3000,
+      isClosable: true,
+    });
+    
+    }catch(err){
+      toast({
+        title: "Account Allready Created",
+        description: "We've are looking for your login.",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
       });
+    }
   } else {
     toast({
       title: "Provide All Credentials.",
@@ -52,45 +49,45 @@ export const CreateAccount = async (data, toast) => {
 
 /* Login User Api Function*/
 
-export const LoginAccount = async (data, toast,changeState) => {
+export const LoginAccount = async (data, toast,changeState,token_data) => {
   let value = {
     email: data.email,
     password: data.password,
   };
+
   if(data.email && data.password){
- let ans = await axios({
-    method: "POST",
-    url: "https://enchanting-teal-llama.cyclic.cloud/user/login",
-    data: value,
-  }).then((e)=>{
-    toast({
-        title: "Login Successfull.",
-        description: "You are login now,enjoy.",
-        status: "success",
-        duration: 3000,
-        isClosable: true,
-      });
-      console.log(e.data.token)
-      changeState({...data,token:e.data.token})
-  }).catch(()=>{
-    toast({
-        title: "Wrong Credentials.",
-        description: "Please Try To fill correct mail and password.",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
-      });
-  });
+    try{
+        let ans = await axios({
+          method: "POST",
+          url: "https://enchanting-teal-llama.cyclic.cloud/user/login",
+          data: value,
+        }) ;
+         toast({
+              title: "Login Successfull.",
+              description: "You are login now,enjoy.",
+              status: "success",
+              duration: 3000,
+              isClosable: true,
+            });
+            changeState({token:ans.data.token,username:data.email,password:data.password})
+       }catch(err){
+        toast({
+              title: "Wrong Credentials.",
+              description: "Please Try To fill correct mail and password.",
+              status: "error",
+              duration: 3000,
+              isClosable: true,
+            });
+       }
   }else{
     toast({
-        title: "Provide All Credentials.",
-        description: "We've are looking for your all credentials.",
-        status: "warning",
-        duration: 3000,
-        isClosable: true,
-      });
+      title: "Provide All Credentials.",
+      description: "We've are looking for your all credentials.",
+      status: "warning",
+      duration: 3000,
+      isClosable: true,
+    });
   }
- 
 };
 
 export const DealsData = (page, limit) => {
@@ -105,12 +102,9 @@ export const DealsDataOne = (id) => {
   return axios(`https://enchanting-teal-llama.cyclic.cloud/meals/${id}`);
 };
 
-export const KindsData = (page, limit) => {
+export const KindsData = (page, limit,token) => {
   return axios(`https://enchanting-teal-llama.cyclic.cloud/moments`, {
-    params: {
-      _page: page,
-      _limit: limit,
-    },
+    headers:{authorization:token}
   });
 };
 
@@ -121,7 +115,7 @@ export const KindsDataOne = (id) => {
 export function Order(data) {
   let ans = axios({
     method: "POST",
-    url: "https://enchanting-teal-llama.cyclic.cloud/order",
+    url: "https://enchanting-teal-llama.cyclic.cloud/orders",
     data: data,
   });
 

@@ -6,24 +6,12 @@ export function BookingConfirm({data1,data2,data3,data4,data5,data6}) {
     const navigate = useNavigate();
   
     const mycall2=()=>{
-      if(data1.quantity>=1){
-   Order(data1)
-      }
-      if(data2.quantity>=1){
-        Order(data2)
-           }
-           if(data3.quantity>=1){
-            Order(data3)
-               }
-               if(data4.quantity>=1){
-                Order(data4)
-                   }
-                   if(data5.quantity>=1){
-                        Order(data5)
-                           }
-                           if(data6.quantity>=1){
-                            Order(data6)
-                               }
+     
+   Order({username:data1.username,
+    email:data1.username,
+    price:data1.price*data1.quantity+data2.price*data2.quantity+data3.price*data3.quantity+data4.price*data4.quantity+data5.price*data5.quantity+data6.price*data6.quantity,
+    quantity:data1.quantity+data2.quantity+data3.quantity+data4.quantity+data5.quantity+data6.quantity})
+     
     }
     return (
       <>
